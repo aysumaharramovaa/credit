@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $registration_address = $_POST['registration_address'];
     $family_member_count = $_POST['family_member_count'];
 
-    $sql = "INSERT INTO credit_table 
+    $sql = "INSERT INTO credit_tablee
     (fin_code, first_name, last_name, father_name, birth_date, workplace, official_salary, registration_address, family_member_count)
     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
