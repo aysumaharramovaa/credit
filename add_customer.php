@@ -25,7 +25,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     );
 
     if ($stmt->execute()) {
-        // Müştəri əlavə olundu → kredit səhifəsinə yönləndir
         header("Location: apply_credit.php?fin_code=$fin_code");
         exit;
     } else {

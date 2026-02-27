@@ -108,12 +108,11 @@ p { padding: 10px; background: #e2e3e5; border-radius: 6px; }
 <?php if (!empty($payment_schedule)) : ?>
 <h2>Ödəniş Cədvəli</h2>
 <table>
-<tr><th>Ay</th><th>Aylıq ödəniş</th><th>Faiz</th><th>Əsas borc</th><th>Qalan borc</th></tr>
+<tr><th>Ay</th><th>Aylıq ödəniş</th><th>Əsas borc</th><th>Qalan borc</th></tr>
 <?php foreach($payment_schedule as $p): ?>
 <tr>
 <td><?= $p['month'] ?></td>
 <td><?= $p['monthly_payment'] ?></td>
-<td><?= $p['interest'] ?></td>
 <td><?= $p['principal'] ?></td>
 <td><?= $p['balance'] ?></td>
 </tr>
